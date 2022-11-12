@@ -2,29 +2,19 @@ def main(path, name):
     # imports
     import speech_recognition as sr 
     import moviepy.editor as mp
-    from pprint import pprint
-    import nltk
-    from nltk.tokenize import word_tokenize
-    from nltk.tag import pos_tag
 
     # SpaCy entity recognition
     import spacy
-    from spacy import displacy
     nlp = spacy.load("en_core_web_sm")
-
     from collections import Counter
 
     # for personality analysis
     import pandas as pd
     import numpy as np
-    from sklearn.feature_extraction.text import CountVectorizer
-    import plotly
     import plotly.express as px
-    import plotly.graph_objects as go
-    import glob
-    import os
     import pickle
     import re
+
 
     ### video to text
     #take video
